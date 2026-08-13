@@ -1,115 +1,148 @@
 # 🕹️ ARKADE — Space Blaster
 
-A retro-styled arcade space shooter built entirely with **React**, **TypeScript**, **Vite**, and **CSS** — no canvas, no sprites, just pure CSS alien spaceships and neon effects!
+A retro-styled browser space shooter built with **React, TypeScript, Vite, and CSS**.
 
-![Arkade Screenshot](https://img.shields.io/badge/Game-ARKADE%20Space%20Blaster-ff2d95?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHRleHQgeT0iMTgiIGZvbnQtc2l6ZT0iMTgiPvCflrk8L3RleHQ+PC9zdmc+)
+Take control of a neon spaceship, fight enemy waves, collect power-ups, build your score, and survive the arcade challenge.
 
 ## ✨ Features
 
-- 🚀 **Pure CSS spaceships** — player & enemies are hand-crafted with clip-paths, gradients & glows
-- 👾 **4 alien ship types** — Scout Saucers, Interceptors, Heavy Cruisers, and Mothership Bosses
-- 🌊 **Wave-based gameplay** — progressive difficulty with boss fights every 5 waves
-- 💥 **Particle explosions** — satisfying CSS-animated destruction effects
-- 🔥 **Power-ups** — Health, Rapid Fire, Spread Shot, Shield
-- 🏆 **Combo system** — chain kills for massive score multipliers
-- 📺 **CRT retro effects** — scanlines, screen shake, neon glow
-- 🎮 **Keyboard controls** — WASD/Arrow Keys + Space
-- 💾 **Persistent high scores** — saved to localStorage
-- 📱 **Responsive** — scales to fit any screen
+- 🚀 CSS-built player and enemy spaceships
+- 👾 Multiple enemy types
+- 🌊 Wave-based gameplay
+- 👑 Boss encounters
+- 💥 Arcade-style visual effects
+- ⚡ Power-ups
+- 🔥 Combo scoring
+- 🏆 Persistent high scores
+- 📺 Retro CRT / neon-inspired effects
+- 📱 Responsive browser interface
+- ⏸️ Pause and resume gameplay
 
 ## 🎮 Controls
 
 | Key | Action |
 |---|---|
-| `W` `A` `S` `D` / `↑` `←` `↓` `→` | Move ship |
+| `W` / `↑` | Move up |
+| `A` / `←` | Move left |
+| `S` / `↓` | Move down |
+| `D` / `→` | Move right |
 | `Space` | Shoot |
 | `P` / `Escape` | Pause |
 
-## 🚀 Getting Started
-
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v18+)
-- npm or yarn
-
-### Install & Run
-
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/arkade-space-blaster.git
-cd arkade-space-blaster
-
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 📦 Deploy to GitHub Pages
-
-### Option 1: GitHub Actions (Recommended)
-
-1. Push this project to a GitHub repository
-2. Go to **Settings → Pages → Source** → select **GitHub Actions**
-3. Create the file `.github/workflows/deploy.yml` (already included below)
-4. Push — your game will be live at `https://YOUR_USERNAME.github.io/arkade-space-blaster/`
-
-### Option 2: Manual Deploy
-
-```bash
-npm run build
-# The built files are in the dist/ folder
-# Upload dist/ contents to any static host
-```
-
-## 🛸 Enemy Types
-
-| Ship | Type | Behavior |
-|---|---|---|
-| 🟢 Scout Saucer | Grunt | Patrols left-right, descends slowly |
-| 🟡 Interceptor | Zigzag | Fast sine-wave movement, occasional shots |
-| 🔴 Heavy Cruiser | Tank | Armoured, fires at player |
-| 🟣 Mothership | Boss | Massive HP, triple shots, appears every 5 waves |
-
 ## 🛠️ Tech Stack
 
-- **React 19** — UI rendering
-- **TypeScript** — type safety
-- **Vite** — fast bundling
-- **Tailwind CSS 4** — utility styles
-- **Pure CSS** — all game visuals (no canvas/WebGL)
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- CSS animations and effects
+- Browser `localStorage` for high scores
+
+## 🚀 Run Locally
+
+### Requirements
+
+- Node.js 18+
+- npm
+- A modern web browser
+
+### Clone
+
+```bash
+git clone https://github.com/ilful360/ARKADE-Space-Blaster.git
+cd ARKADE-Space-Blaster
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start development server
+
+```bash
+npm run dev
+```
+
+Open the local address shown by Vite.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
 
 ## 📁 Project Structure
 
+```text
+ARKADE-Space-Blaster/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── workflows/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── utils/
+│   └── ...
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+├── tsconfig.json
+└── vite.config.ts
 ```
-src/
-├── App.tsx              # Entry point
-├── Game.tsx             # Main game logic & loop
-├── types.ts             # TypeScript interfaces
-├── hooks/
-│   ├── useGameLoop.ts   # requestAnimationFrame loop
-│   └── useInput.ts      # Keyboard input handler
-├── components/
-│   ├── StarField.tsx    # Animated star background
-│   ├── Player.tsx       # CSS player spaceship
-│   ├── EnemySprite.tsx  # CSS alien spaceships (4 types)
-│   ├── HUD.tsx          # Score, lives, wave, power-ups
-│   ├── MenuScreen.tsx   # Title screen
-│   ├── PauseScreen.tsx  # Pause overlay
-│   └── GameOverScreen.tsx # Game over with stats
-└── index.css            # Animations & neon effects
-```
+
+## 🌐 GitHub Pages
+
+The repository includes a GitHub Actions workflow for deployment.
+
+After enabling **Settings → Pages → GitHub Actions**, pushes to the configured branch can build and deploy the application.
+
+Expected project URL:
+
+**https://ilful360.github.io/ARKADE-Space-Blaster/**
+
+## 🔮 Future Improvements
+
+- 🔊 Sound effects and background music
+- 🏆 Expanded leaderboard and statistics
+- 🚀 More ships and weapons
+- 👾 Additional enemy behaviours
+- 🌌 More levels
+- 🎯 Difficulty selection
+- 🎮 Gamepad support
+- 📱 Improved touch controls
+- 🌟 Additional visual effects
+
+## 🐛 Reporting Issues
+
+Use GitHub Issues to report bugs. Include:
+
+- What happened
+- Steps to reproduce
+- Expected behaviour
+- Browser and operating system
+- Screenshots or console errors when useful
 
 ## 📄 License
 
-MIT — feel free to use, modify, and share!
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE).
+
+## 👤 Author
+
+**MD Ilful Hossain**
+
+GitHub: https://github.com/ilful360
 
 ---
 
-<p align="center">
-  Made with ❤️ for GitHub<br/>
-  <strong>⭐ Star this repo if you enjoyed the game!</strong>
-</p>
+⭐ If you enjoy the game, consider starring the repository!
