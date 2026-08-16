@@ -88,33 +88,6 @@ npm run check
 npm run preview
 ```
 
-## 📁 Project Structure
-
-```text
-ARKADE-Space-Blaster/
-├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   ├── workflows/
-│   ├── dependabot.yml
-│   └── PULL_REQUEST_TEMPLATE.md
-├── public/
-├── src/
-│   ├── components/
-│   ├── hooks/
-│   ├── utils/
-│   └── ...
-├── .gitignore
-├── CONTRIBUTING.md
-├── LICENSE
-├── README.md
-├── SECURITY.md
-├── index.html
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-└── vite.config.ts
-```
-
 ## 🌐 GitHub Pages
 
 The project is configured as a GitHub Pages project site at:
@@ -125,23 +98,9 @@ The included GitHub Actions workflow installs the locked dependencies, type-chec
 
 In GitHub, make sure **Settings → Pages → Source** is set to **GitHub Actions**.
 
-## 🐛 Reporting Issues
-
-Use GitHub Issues for bugs and feature requests. For a bug report, include what happened, steps to reproduce, expected behaviour, browser/OS information, and screenshots or console errors when useful.
-
-## 🤝 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development and pull request guidelines.
-
 ## 📄 License
 
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE).
-
-## 👤 Author
-
-**MD Ilful Hossain**
-
-GitHub: https://github.com/ilful360
 
 ---
 
