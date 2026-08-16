@@ -2,12 +2,19 @@
 
 Thanks for contributing to ARKADE — Space Blaster.
 
+## Development
+
 1. Fork the repository.
 2. Create a feature branch.
-3. Run `npm install`.
-4. Use `npm run dev` while developing.
-5. Run `npm run build` before submitting changes.
-6. Open a pull request with a clear description.
+3. Install dependencies with `npm ci` or `npm install`.
+4. Start the development server with `npm run dev`.
+5. Run `npm run typecheck`.
+6. Run `npm run build`.
+7. Open a pull request with a clear description of the change.
 
-Keep changes focused and follow the existing React/TypeScript structure.
-Do not commit `node_modules`, build output, secrets, or local environment files.
+## Guidelines
+
+- Keep changes focused and easy to review.
+- Follow the existing React/TypeScript structure.
+- Do not commit `node_modules`, `dist`, secrets, or local environment files.
+- Update the README when user-facing behaviour or setup changes.

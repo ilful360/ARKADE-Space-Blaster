@@ -1,8 +1,8 @@
 # 🕹️ ARKADE — Space Blaster
 
-A retro-styled browser space shooter built with **React, TypeScript, Vite, and CSS**.
+A retro-styled browser space shooter built with **React, TypeScript, Vite, and Tailwind CSS**.
 
-Take control of a neon spaceship, fight enemy waves, collect power-ups, build your score, and survive the arcade challenge.
+**Play online:** https://ilful360.github.io/ARKADE-Space-Blaster/
 
 ## ✨ Features
 
@@ -17,6 +17,7 @@ Take control of a neon spaceship, fight enemy waves, collect power-ups, build yo
 - 📺 Retro CRT / neon-inspired effects
 - 📱 Responsive browser interface
 - ⏸️ Pause and resume gameplay
+- 🔊 Browser-generated sound effects
 
 ## 🎮 Controls
 
@@ -37,6 +38,7 @@ Take control of a neon spaceship, fight enemy waves, collect power-ups, build yo
 - Tailwind CSS
 - CSS animations and effects
 - Browser `localStorage` for high scores
+- Web Audio API for sound effects
 
 ## 🚀 Run Locally
 
@@ -56,7 +58,7 @@ cd ARKADE-Space-Blaster
 ### Install dependencies
 
 ```bash
-npm install
+npm ci
 ```
 
 ### Start development server
@@ -65,15 +67,22 @@ npm install
 npm run dev
 ```
 
-Open the local address shown by Vite.
+Open the local URL shown by Vite.
 
-### Build
+### Validate the project
 
 ```bash
+npm run typecheck
 npm run build
 ```
 
-### Preview production build
+Or run both checks together:
+
+```bash
+npm run check
+```
+
+### Preview the production build
 
 ```bash
 npm run preview
@@ -85,7 +94,9 @@ npm run preview
 ARKADE-Space-Blaster/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
-│   └── workflows/
+│   ├── workflows/
+│   ├── dependabot.yml
+│   └── PULL_REQUEST_TEMPLATE.md
 ├── public/
 ├── src/
 │   ├── components/
@@ -93,45 +104,34 @@ ARKADE-Space-Blaster/
 │   ├── utils/
 │   └── ...
 ├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── SECURITY.md
 ├── index.html
 ├── package.json
 ├── package-lock.json
-├── README.md
 ├── tsconfig.json
 └── vite.config.ts
 ```
 
 ## 🌐 GitHub Pages
 
-The repository includes a GitHub Actions workflow for deployment.
-
-After enabling **Settings → Pages → GitHub Actions**, pushes to the configured branch can build and deploy the application.
-
-Expected project URL:
+The project is configured as a GitHub Pages project site at:
 
 **https://ilful360.github.io/ARKADE-Space-Blaster/**
 
-## 🔮 Future Improvements
+The included GitHub Actions workflow installs the locked dependencies, type-checks the source, builds the Vite production site, uploads `dist/`, and deploys it to GitHub Pages.
 
-- 🔊 Sound effects and background music
-- 🏆 Expanded leaderboard and statistics
-- 🚀 More ships and weapons
-- 👾 Additional enemy behaviours
-- 🌌 More levels
-- 🎯 Difficulty selection
-- 🎮 Gamepad support
-- 📱 Improved touch controls
-- 🌟 Additional visual effects
+In GitHub, make sure **Settings → Pages → Source** is set to **GitHub Actions**.
 
 ## 🐛 Reporting Issues
 
-Use GitHub Issues to report bugs. Include:
+Use GitHub Issues for bugs and feature requests. For a bug report, include what happened, steps to reproduce, expected behaviour, browser/OS information, and screenshots or console errors when useful.
 
-- What happened
-- Steps to reproduce
-- Expected behaviour
-- Browser and operating system
-- Screenshots or console errors when useful
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development and pull request guidelines.
 
 ## 📄 License
 

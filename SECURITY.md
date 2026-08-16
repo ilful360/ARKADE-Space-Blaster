@@ -1,5 +1,11 @@
-# Security
+# Security Policy
 
-For ordinary bugs, please use GitHub Issues.
+## Reporting a security issue
 
-If you discover a security issue that should not be publicly disclosed, contact the repository owner privately through GitHub rather than posting sensitive details in a public issue.
+Please do not publish sensitive security issues in a public GitHub issue.
+
+Instead, contact the repository owner privately through GitHub:
+
+https://github.com/ilful360
+
+For ordinary gameplay bugs, UI issues, or feature requests, please open a public GitHub Issue.
