@@ -1,4 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
+
+const STARS_BG = `${import.meta.env.BASE_URL}images/stars-bg.jpg`;
 import { useGameLoop } from './hooks/useGameLoop';
 import { useInput } from './hooks/useInput';
 import type { GameState, Bullet, Enemy, Particle, PowerUp, ScorePopup, PowerUpType } from './types';
@@ -651,6 +653,9 @@ export default function Game() {
           border: '1px solid rgba(0, 240, 255, 0.15)',
           borderRadius: '4px',
           overflow: 'hidden',
+          // Keep game coordinates fixed while fitting the 800x600 playfield to small screens.
+          transform: 'scale(min(1, calc(100vw / 800), calc(100vh / 600)))',
+          transformOrigin: 'center center',
           boxShadow: '0 0 40px rgba(0, 240, 255, 0.08), inset 0 0 60px rgba(0, 0, 0, 0.5)',
         }}
       >
@@ -659,7 +664,7 @@ export default function Game() {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'url(/images/stars-bg.jpg)',
+            backgroundImage: `url(${STARS_BG})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             opacity: 0.3,

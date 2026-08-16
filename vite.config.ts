@@ -10,6 +10,8 @@ const __dirname = path.dirname(__filename);
 
 // https://vite.dev/config/
 export default defineConfig({
+  // This repository is deployed as a project site under /ARKADE-Space-Blaster/.
+  base: '/ARKADE-Space-Blaster/',
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
     alias: {
