@@ -11,12 +11,12 @@
     "check": "npm run typecheck && npm run build"
   },
   "dependencies": {
-    "react": "19.2.6",
+    "react": "19.2.8",
     "react-dom": "19.2.6"
   },
   "devDependencies": {
     "@types/node": "22.19.17",
-    "@types/react": "19.2.7",
+    "@types/react": "19.2.18",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.1.1",
     "typescript": "5.9.3",
