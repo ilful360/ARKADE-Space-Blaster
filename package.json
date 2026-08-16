@@ -11,23 +11,19 @@
     "check": "npm run typecheck && npm run build"
   },
   "dependencies": {
-    "clsx": "2.1.1",
     "react": "19.2.6",
-    "react-dom": "19.2.6",
-    "tailwind-merge": "3.4.0"
+    "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "4.1.17",
     "@types/node": "22.19.17",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "5.1.1",
-    "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
     "vite": "7.3.2",
     "vite-plugin-singlefile": "2.3.0"
   },
-  "description": "A retro-styled browser space shooter built with React, TypeScript, Vite, and Tailwind CSS.",
+  "description": "A retro-styled browser space shooter built with React, TypeScript, Vite, and handcrafted CSS.",
   "author": "MD Ilful Hossain",
   "license": "MIT",
   "homepage": "https://ilful360.github.io/ARKADE-Space-Blaster/",
@@ -44,7 +40,6 @@
     "arcade",
     "react",
     "typescript",
-    "vite",
-    "tailwindcss"
+    "vite"
   ]
 }
